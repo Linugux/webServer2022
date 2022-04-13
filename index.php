@@ -89,6 +89,12 @@
                         <pre id="reloadcowsay" style="max-width: 450px; font-size: 14px; color: white; background-color: black;">
                             <?php include 'Cowsay.php'; ?>
                         </pre>
+
+			<audio controls height="100" width="100">
+   				<source src="espeak.mp3" type="audio/mpeg">
+   				<!--<source src="horse.ogg" type="audio/ogg">-->
+   				<embed height="50" width="100" src="espeak.mp3">
+ 			</audio>
                     </tt>
                     <p style="position: relative;" id="reloadphp"  class="" align="center"></p>
                 </p>
@@ -102,7 +108,8 @@
                 I´m Engineer Computer Sciences on "Linux/Gnu".
                 My Name's Nestor Garrido 
             </tt>
-            <a href="linuguxLogoWhatsapp.jpg"><img width="20%" src="linuguxLogoWhatsapp.jpg"></a>
+            <a style="position:relative;" href="linuguxLogoWhatsapp.jpg"><img width="20%" src="linuguxLogoWhatsapp.jpg"></a>
+	    <a style="color: white; position:relative; font-size:3px" align="left" ><?php include 'linuguxToilet.php' ?></a>
         </div>
     </article>
   </section>
@@ -180,7 +187,7 @@ $(document).ready(function() {
 div 
 .linugux {
     top: -40PX;
-  width: 250px;
+  width: 200px;
   height: 10px;
   background: ;
   position: relative;

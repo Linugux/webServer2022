@@ -1,8 +1,8 @@
--- MySQL dump 10.16  Distrib 10.1.48-MariaDB, for debian-linux-gnueabihf (armv7l)
+-- MySQL dump 10.14  Distrib 5.5.64-MariaDB, for debian-linux-gnu (i686)
 --
--- Host: localhost    Database: webServer
+-- Host: localhost    Database: server0
 -- ------------------------------------------------------
--- Server version	10.1.48-MariaDB-0+deb9u1
+-- Server version	5.5.64-MariaDB-1ubuntu0.14.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -24,9 +24,9 @@ DROP TABLE IF EXISTS `msgUpdate`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `msgUpdate` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `msg65` varchar(60) DEFAULT NULL,
+  `msg65` varchar(52) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,7 +35,7 @@ CREATE TABLE `msgUpdate` (
 
 LOCK TABLES `msgUpdate` WRITE;
 /*!40000 ALTER TABLE `msgUpdate` DISABLE KEYS */;
-INSERT INTO `msgUpdate` VALUES (6,'010101111010100010101000010100101111111101010101001110010001'),(7,'0101011110101'),(8,'Creation and Design for Linugux'),(9,'Hi'),(10,''),(11,'fortune'),(12,'cat fortune.txt');
+INSERT INTO `msgUpdate` VALUES (1,'Hi, How Are You ?'),(2,'My Phone +52 56 2460 0744'),(3,'My Email ::: Linugux@gmail.com');
 /*!40000 ALTER TABLE `msgUpdate` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -48,13 +48,13 @@ DROP TABLE IF EXISTS `phonebook`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `phonebook` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(32) DEFAULT NULL,
   `phone` varchar(32) DEFAULT NULL,
   `firstname` varchar(32) DEFAULT NULL,
   `lastname` varchar(32) DEFAULT NULL,
   `address` varchar(64) DEFAULT NULL,
-  `email` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,7 +63,7 @@ CREATE TABLE `phonebook` (
 
 LOCK TABLES `phonebook` WRITE;
 /*!40000 ALTER TABLE `phonebook` DISABLE KEYS */;
-INSERT INTO `phonebook` VALUES (1,'+52 56 2460 0477','Linugux','Inx.','Cuautitlan Izcalli, Mexico','linugux@gmail.com'),(2,'+1 607 358 7405','Xugunil','Xni.','Cuautitlan Izcalli, Mexico','xugunil@gmail.com'),(3,'+1 607 358 7405','Ayesk','Trep Mitter','Cuautitlan Izcalli, Mexico','gusgra2004@hotmail.com'),(4,'+1 607 358 7405','Pepe','Bras','Cuautitlan Izcalli, Mexico','braspepe@gmail.com'),(5,'+52 56 2460 0477','Nestor','Garrido','Cuautitlan Izcalli, Mexico','nestor.garrido.g@gmail.com'),(6,'+1 823 4838 8212','Patricia','Torres','Cuautitlan Izcalli, Mexico','patriciatren@gmail.com'),(7,'+1 823 4838 8212','Abraham','Condor','Cuautitlan Izcalli, Mexico','nestor.garrido.condor@gmail.com'),(8,'+1 823 4838 2145','Edith','Vela','Cuautitlan IZcalli, Mexico','epantene@gmail.com'),(9,'+52 56 2460 0477','Neto','Gardo','Cuautitlan Izcalli, Mexico','netogardo@hotmail.com'),(10,'+52 56 2460 0477','Create','Design','Cuautitlan Izcalli, Mexico','erickvega.soluciones@gmail.com'),(11,'+1 607 358 7405','Vacante','Castro','Cuautitlan Izcalli, Mexico','profuturo.berenice@gmail.com'),(12,'+1 607 358 7405','Dessire','Cristina','Cuautitlan Izcalli, Mexico','arturleee@gmail.com'),(13,'+52 55 1278 4420','Sugusmen','Ocho','Cuautitlan Izcalli, Mexico','sugusmen8@yahoo.com.mx'),(14,'+52 55 1278 4420','FirstEmail','Sgs','Cuautitlan Izcalli, Mexico','sugusmen@hotmail.com'),(15,'+52 55 4366 4826','Karmen','Danny','Cuautitlan Izcalli, Mexico','sugusmen8@yahoo.com.mx'),(16,'+52 56 3460 0477','LinuguxMail','Ru','Cuautitlan Izcalli, Mexico','linugux@mail.ru'),(17,'+52 55 1930 4501','Manuel','Tgr','Cuautitlan Izcalli, Mexico','lumpenterry@gmail.com');
+INSERT INTO `phonebook` VALUES (1,'Linugux@gmail.com','+52 56 2460 0477','Linugux','Inx.','Mexico');
 /*!40000 ALTER TABLE `phonebook` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -76,9 +76,9 @@ DROP TABLE IF EXISTS `titleUpdate`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `titleUpdate` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(66) DEFAULT NULL,
+  `title` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -87,7 +87,7 @@ CREATE TABLE `titleUpdate` (
 
 LOCK TABLES `titleUpdate` WRITE;
 /*!40000 ALTER TABLE `titleUpdate` DISABLE KEYS */;
-INSERT INTO `titleUpdate` VALUES (67,'LiNUGUX'),(68,'LiNUGUX iNX.'),(69,'Linugux'),(70,'Linugux Inx.'),(71,'Linugux >._');
+INSERT INTO `titleUpdate` VALUES (1,'Linugux'),(2,'Linugux Inx.'),(3,'Linugux.ddns.net'),(4,'LiNUGUX'),(5,'LiNUGUX iNX.'),(6,'Linugux@gmail.com');
 /*!40000 ALTER TABLE `titleUpdate` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -100,4 +100,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-06 12:00:38
+-- Dump completed on 2022-04-12  5:00:02

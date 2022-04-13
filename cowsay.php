@@ -1,14 +1,11 @@
- _________________________________________
-/ October. This is one of the peculiarly  \
-| dangerous months to speculate in stocks |
-| in. The others are July, January,       |
-| September, April, November, May, March, |
-| June, December, August, and February.   |
-| -- Mark Twain, "Pudd'nhead Wilson's     |
-\ Calendar"                               /
- -----------------------------------------
+ _____________________________________
+/ As to the Adjective: when in doubt, \
+| strike it out. -- Mark Twain,       |
+\ "Pudd'nhead Wilson's Calendar"      /
+ -------------------------------------
   \
-   \   \
-        \ /\
-        ( )
-      .( o ).
+   \
+      /\_)o<
+     |      \
+     | O . O|
+      \_____/
