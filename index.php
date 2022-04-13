@@ -89,13 +89,9 @@
                         <pre id="reloadcowsay" style="max-width: 450px; font-size: 14px; color: white; background-color: black;">
                             <?php include 'Cowsay.php'; ?>
                         </pre>
-
-			<audio controls height="100" width="100">
-   				<source src="espeak.mp3" type="audio/mpeg">
-   				<!--<source src="horse.ogg" type="audio/ogg">-->
-   				<embed height="50" width="100" src="espeak.mp3">
- 			</audio>
                     </tt>
+		    <div id="audioTexto">
+			</div>
                     <p style="position: relative;" id="reloadphp"  class="" align="center"></p>
                 </p>
                 <br>
@@ -113,8 +109,12 @@
         </div>
     </article>
   </section>
-
-    <script>
+   <script>
+$(document).ready(function() {
+      var refreshId =  setInterval( function(){
+    $('#audioTexto').load('audioTexto.php');//actualizas el div
+   }, 60000 );
+});
 $(document).ready(function() {
       var refreshId =  setInterval( function(){
     $('#reloadContactos').load('showPhoneBook.php');//actualizas el div

@@ -1,11 +1,9 @@
- _____________________________________
-/ As to the Adjective: when in doubt, \
-| strike it out. -- Mark Twain,       |
-\ "Pudd'nhead Wilson's Calendar"      /
- -------------------------------------
+ _________________________________________
+/ Q: What is the difference between Texas \
+\ and yogurt? A: Yogurt has culture.      /
+ -----------------------------------------
   \
-   \
-      /\_)o<
-     |      \
-     | O . O|
-      \_____/
+   \____
+  /@    ~-.
+  \/ __ .- |
+   // //  @
