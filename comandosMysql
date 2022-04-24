@@ -1,0 +1,15 @@
+MariaDB 
+bifurcacion de Mysql , Gestor openSource
+
+60 Mb
+
+CREATE DATABASE dataCard;
+DROP DATABASE dataCard;
+CREATE TABLE card(id int NOT NULL AUTO_INCREMENT, company VARCHAR(100), expDate VARCHAR(10), codeSeg int(5), clabe int(18), numCard int (16),  oneFour int(4), secFour int(4), treeFour int(4), fourFour int(4), PRIMARY KEY (id));
+
+insert into card(company, typeCard, expDate, codeSeg , clabe , numCard ,  oneFour , secFour , treeFour , fourFour ) values ('NuBank','Credit','04/30','248','646180178765824436','','','','','','','','')   ;
+
+drop table card;
+
+mysqldump  -v --opt --events --routines --triggers --default-character-set=utf8 -u root -pmy dataCard > db_dataCard`date +%Y%m%d_%H%M%S`.sql
+

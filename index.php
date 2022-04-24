@@ -52,7 +52,7 @@
 </script>
     
 </head>
-<body style="background-color: black; color: white;">
+<body style="background-color: black; color: white;" onload="brython()">
     <header id="header">
         <div class="typewriter">
             <h1 id="reloadmsg" style="text-transform: capitalize; font-size: 10px; color : black;position:relative;" ></h1>
@@ -90,8 +90,7 @@
                             <?php include 'Cowsay.php'; ?>
                         </pre>
                     </tt>
-		    <div id="audioTexto">
-			</div>
+		                <div id="audioTexto"></div>
                     <p style="position: relative;" id="reloadphp"  class="" align="center"></p>
                 </p>
                 <br>
@@ -299,9 +298,6 @@ div
             </div>
         </div>
     </section>
-    <aside id="" style="display: ;" class="">
-       
-    </aside>
     <footer id="" style="display: none ;" class="contact">
                   <p style="background: black">
                       <a href="mailto:linugux@gmail.com">EMail ::: Linugux@gmail.com</a><br>
@@ -322,5 +318,12 @@ div
             <p style="background: black; font-size: 15px; position: relative;" id="reloadContactos"  class="" align="center"></p>
         </div>
       </footer>
+      <div style="background: white; color: black">
+        <script type="text/javascript" src="src/brython.js"></script>
+        <script type="text/javascript" src="src/brython_stdlib.js"></script>
+      <script type="text/python" src="brython.py"></script>
+        <br>
+        <br>
+      </div>
 </body>
 </html>
