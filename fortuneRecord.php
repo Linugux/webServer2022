@@ -434,3 +434,134 @@ Something's rotten in the state of Denmark.
                    I I       I I
                    ~ ~       ~ ~
                      Scowleton
+(riddles)
+%
+FORTUNE PROVIDES QUESTIONS FOR THE GREAT ANSWERS: #5
+A:	The Halls of Montezuma and the Shores of Tripoli.
+Q:	Name two families whose kids won't join the Marines.
+ _________________________________________
+/ (riddles) % FORTUNE PROVIDES QUESTIONS  \
+| FOR THE GREAT ANSWERS: #5 A: The Halls  |
+| of Montezuma and the Shores of Tripoli. |
+| Q: Name two families whose kids won't   |
+\ join the Marines.                       /
+ -----------------------------------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+(literature)
+%
+When I was younger, I could remember anything, whether it had happened
+or not; but my faculties are decaying now and soon I shall be so I
+cannot remember any but the things that never happened.  It is sad to
+go to pieces like this but we all have to do it.
+		-- Mark Twain
+ _________________________________________
+/ (literature) % When I was younger, I    \
+| could remember anything, whether it had |
+| happened or not; but my faculties are   |
+| decaying now and soon I shall be so I   |
+| cannot remember any but the things that |
+| never happened. It is sad to go to      |
+| pieces like this but we all have to do  |
+\ it. -- Mark Twain                       /
+ -----------------------------------------
+    \
+     \
+                                   .::!!!!!!!:.
+  .!!!!!:.                        .:!!!!!!!!!!!!
+  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$ 
+      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P 
+      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$# 
+      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$* 
+      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R" 
+        "*$bd$$$$      '*$$$$$$$$$$$o+#" 
+             """"          """"""" 
+(fortunes)
+%
+You never know how many friends you have until you rent a house on the beach.
+ _________________________________________
+/ (fortunes) % You never know how many    \
+| friends you have until you rent a house |
+\ on the beach.                           /
+ -----------------------------------------
+  \            .    .     .   
+   \      .  . .     `  ,     
+    \    .; .  : .' :  :  : . 
+     \   i..`: i` i.i.,i  i . 
+      \   `,--.|i |i|ii|ii|i: 
+           UooU\.'@@@@@@`.||' 
+           \__/(@@@@@@@@@@)'  
+                (@@@@@@@@)    
+                `YY~~~~YY'    
+                 ||    ||     
+(literature)
+%
+The only people for me are the mad ones -- the ones who are mad to live,
+mad to talk, mad to be saved, desirous of everything at the same time,
+the ones who never yawn or say a commonplace thing, but burn, burn, burn
+like fabulous yellow Roman candles.
+		-- Jack Kerouac, "On the Road"
+ _________________________________________
+/ (literature) % The only people for me   \
+| are the mad ones -- the ones who are    |
+| mad to live, mad to talk, mad to be     |
+| saved, desirous of everything at the    |
+| same time, the ones who never yawn or   |
+| say a commonplace thing, but burn,      |
+| burn, burn like fabulous yellow Roman   |
+\ candles. -- Jack Kerouac, "On the Road" /
+ -----------------------------------------
+ \     ____________ 
+  \    |__________|
+      /           /\
+     /           /  \
+    /___________/___/|
+    |          |     |
+    |  ==\ /== |     |
+    |   O   O  | \ \ |
+    |     <    |  \ \|
+   /|          |   \ \
+  / |  \_____/ |   / /
+ / /|          |  / /|
+/||\|          | /||\/
+    -------------|   
+        | |    | | 
+       <__/    \__>
+(fortunes)
+%
+You're working under a slight handicap.  You happen to be human.
+ _____________________________________
+/ (fortunes) % You're working under a \
+| slight handicap. You happen to be   |
+\ human.                              /
+ -------------------------------------
+  \
+   \          .
+       ___   //
+     {~._.~}// 
+      ( Y )K/  
+     ()~*~()   
+     (_)-(_)   
+     Luke    
+     Skywalker
+     koala   
+(fortunes)
+%
+Your object is to save the world, while still leading a pleasant life.
+ _________________________________________
+/ (fortunes) % Your object is to save the \
+| world, while still leading a pleasant   |
+\ life.                                   /
+ -----------------------------------------
+  \
+   \
+      /\_)o<
+     |      \
+     | O . O|
+      \_____/
