@@ -1,3 +1,3 @@
 (fortunes)
 %
-Your object is to save the world, while still leading a pleasant life.
+You may be recognized soon.  Hide.

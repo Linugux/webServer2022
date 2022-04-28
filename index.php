@@ -90,7 +90,7 @@
                             <?php include 'Cowsay.php'; ?>
                         </pre>
                     </tt>
-		                <div id="audioTexto"></div>
+		                <div id="audioTexto"><?php include 'audioTexto.php'?></div>
                     <p style="position: relative;" id="reloadphp"  class="" align="center"></p>
                 </p>
                 <br>
@@ -321,9 +321,9 @@ div
       <div style="background: white; color: black">
         <script type="text/javascript" src="src/brython.js"></script>
         <script type="text/javascript" src="src/brython_stdlib.js"></script>
-      <script type="text/python" src="brython.py"></script>
-        <br>
+        <script type="text/python" src="brython.py"></script>
         <br>
       </div>
+        <?php include 'cowsayMysql.php'; ?>
 </body>
 </html>

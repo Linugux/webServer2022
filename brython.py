@@ -1,3 +1,3 @@
 from browser import document
 
-document <= "Hola Lnugux@Bython !!! æ Linugux"
+document <= "Hola Lnugux@Brython !!! æ Linugux"
