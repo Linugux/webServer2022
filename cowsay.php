@@ -1,12 +1,13 @@
- ________________________________________
-/ (fortunes) % Your best consolation is  \
-| the hope that the things you failed to |
-\ get weren't really worth having.       /
- ----------------------------------------
-     \
-      \
-          oO)-.                       .-(Oo
-         /__  _\                     /_  __\
-         \  \(  |     ()~()         |  )/  /
-          \__|\ |    (-___-)        | /|__/
-          '  '--'    ==`-'==        '--'  '
+ ______________________________________
+/ (literature) % Something's rotten in \
+\ the state of Denmark. -- Shakespeare /
+ --------------------------------------
+          \      (__)      
+           \     /oo|  
+            \   (_"_)*+++++++++*
+                   //I#\\\\\\\\I\
+                   I[I|I|||||I I `
+                   I`I'///'' I I
+                   I I       I I
+                   ~ ~       ~ ~
+                     Scowleton

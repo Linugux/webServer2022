@@ -1,4 +1,4 @@
-(fortunes)
+(literature)
 %
-Your best consolation is the hope that the things you failed to get weren't
-really worth having.
+Something's rotten in the state of Denmark.
+		-- Shakespeare
