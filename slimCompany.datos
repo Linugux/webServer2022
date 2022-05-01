@@ -1,0 +1,2 @@
+alter table Productos_Publicaciones add  foreign key (codigo_slim) references Inventario_fisico (codigo_slim);
+

@@ -1,6 +1,6 @@
 -- MySQL dump 10.14  Distrib 5.5.64-MariaDB, for debian-linux-gnu (i686)
 --
--- Host: localhost    Database: server0
+-- Host: localhost    Database: slimCompany
 -- ------------------------------------------------------
 -- Server version	5.5.64-MariaDB-1ubuntu0.14.04.1
 
@@ -16,49 +16,63 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `msgUpdate`
+-- Table structure for table `Inventario_Fisico`
 --
 
-DROP TABLE IF EXISTS `msgUpdate`;
+DROP TABLE IF EXISTS `Inventario_Fisico`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `msgUpdate` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `msg65` varchar(52) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+CREATE TABLE `Inventario_Fisico` (
+  `codigo_slim` int(11) NOT NULL,
+  `unidades` int(11) NOT NULL,
+  `apartado` tinyint(1) DEFAULT NULL,
+  UNIQUE KEY `codigo_slim` (`codigo_slim`),
+  KEY `codigo_slim_2` (`codigo_slim`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `phonebook`
+-- Table structure for table `Productos_Publicaciones`
 --
 
-DROP TABLE IF EXISTS `phonebook`;
+DROP TABLE IF EXISTS `Productos_Publicaciones`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `phonebook` (
+CREATE TABLE `Productos_Publicaciones` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `email` varchar(32) DEFAULT NULL,
-  `phone` varchar(32) DEFAULT NULL,
-  `firstname` varchar(32) DEFAULT NULL,
-  `lastname` varchar(32) DEFAULT NULL,
-  `address` varchar(64) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `codigo_slim` int(11) NOT NULL,
+  `descripcion_corta` varchar(75) NOT NULL,
+  `id_publicacion` varchar(15) NOT NULL,
+  `title_publicaciones` varchar(125) NOT NULL,
+  `sku_publicaciones` varchar(65) NOT NULL,
+  `linea` smallint(6) NOT NULL,
+  `sublinea` smallint(6) NOT NULL,
+  `sublinea2` smallint(6) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `codigo_slim` (`codigo_slim`),
+  CONSTRAINT `Productos_Publicaciones_ibfk_1` FOREIGN KEY (`codigo_slim`) REFERENCES `Inventario_Fisico` (`codigo_slim`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Table structure for table `titleUpdate`
+-- Table structure for table `Publicaciones`
 --
 
-DROP TABLE IF EXISTS `titleUpdate`;
+DROP TABLE IF EXISTS `Publicaciones`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `titleUpdate` (
+CREATE TABLE `Publicaciones` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(32) DEFAULT NULL,
+  `id_publicacion` varchar(15) NOT NULL,
+  `title_publicaciones` varchar(125) NOT NULL,
+  `sku_publicacion` varchar(65) NOT NULL,
+  `attribute_conbinations` varchar(75) NOT NULL,
+  `price` double NOT NULL,
+  `category_id` varchar(20) NOT NULL,
+  `avalible_quantity` int(11) NOT NULL,
+  `status` smallint(6) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

@@ -1,6 +1,6 @@
 -- MySQL dump 10.14  Distrib 5.5.64-MariaDB, for debian-linux-gnu (i686)
 --
--- Host: localhost    Database: server0
+-- Host: localhost    Database: dataCard
 -- ------------------------------------------------------
 -- Server version	5.5.64-MariaDB-1ubuntu0.14.04.1
 
@@ -16,79 +16,83 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `msgUpdate`
+-- Table structure for table `backBank`
 --
 
-DROP TABLE IF EXISTS `msgUpdate`;
+DROP TABLE IF EXISTS `backBank`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `msgUpdate` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `msg65` varchar(52) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+CREATE TABLE `backBank` (
+  `idBackBank` int(11) NOT NULL AUTO_INCREMENT,
+  `nameBackbank` varchar(50) NOT NULL,
+  `idCountry` int(11) NOT NULL,
+  PRIMARY KEY (`idBackBank`),
+  KEY `idCountry` (`idCountry`),
+  CONSTRAINT `backBank_ibfk_1` FOREIGN KEY (`idCountry`) REFERENCES `country` (`idCountry`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `msgUpdate`
+-- Dumping data for table `backBank`
 --
 
-LOCK TABLES `msgUpdate` WRITE;
-/*!40000 ALTER TABLE `msgUpdate` DISABLE KEYS */;
-INSERT INTO `msgUpdate` VALUES (1,'Hi, How Are You ?'),(2,'My Phone +52 56 2460 0744'),(3,'My Email ::: Linugux@gmail.com');
-/*!40000 ALTER TABLE `msgUpdate` ENABLE KEYS */;
+LOCK TABLES `backBank` WRITE;
+/*!40000 ALTER TABLE `backBank` DISABLE KEYS */;
+INSERT INTO `backBank` VALUES (1,'ReneSerrano@NormanMuller',1),(2,'Brazilia',2),(3,'NeoBanco',3);
+/*!40000 ALTER TABLE `backBank` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `phonebook`
+-- Table structure for table `bank`
 --
 
-DROP TABLE IF EXISTS `phonebook`;
+DROP TABLE IF EXISTS `bank`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `phonebook` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `email` varchar(32) DEFAULT NULL,
-  `phone` varchar(32) DEFAULT NULL,
-  `firstname` varchar(32) DEFAULT NULL,
-  `lastname` varchar(32) DEFAULT NULL,
-  `address` varchar(64) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+CREATE TABLE `bank` (
+  `idBank` int(11) NOT NULL AUTO_INCREMENT,
+  `nameBank` varchar(50) NOT NULL,
+  `idCountry` int(11) NOT NULL,
+  `idBackBank` int(11) NOT NULL,
+  PRIMARY KEY (`idBank`),
+  UNIQUE KEY `nameBank` (`nameBank`),
+  KEY `idCountry` (`idCountry`),
+  CONSTRAINT `bank_ibfk_1` FOREIGN KEY (`idCountry`) REFERENCES `country` (`idCountry`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `phonebook`
+-- Dumping data for table `bank`
 --
 
-LOCK TABLES `phonebook` WRITE;
-/*!40000 ALTER TABLE `phonebook` DISABLE KEYS */;
-INSERT INTO `phonebook` VALUES (1,'Linugux@gmail.com','+52 56 2460 0477','Linugux','Inx.','Mexico');
-/*!40000 ALTER TABLE `phonebook` ENABLE KEYS */;
+LOCK TABLES `bank` WRITE;
+/*!40000 ALTER TABLE `bank` DISABLE KEYS */;
+INSERT INTO `bank` VALUES (1,'Fundeadora',1,1),(2,'NuBank',2,2);
+/*!40000 ALTER TABLE `bank` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `titleUpdate`
+-- Table structure for table `country`
 --
 
-DROP TABLE IF EXISTS `titleUpdate`;
+DROP TABLE IF EXISTS `country`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `titleUpdate` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(32) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+CREATE TABLE `country` (
+  `idCountry` int(11) NOT NULL AUTO_INCREMENT,
+  `nameCountry` varchar(50) NOT NULL,
+  PRIMARY KEY (`idCountry`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `titleUpdate`
+-- Dumping data for table `country`
 --
 
-LOCK TABLES `titleUpdate` WRITE;
-/*!40000 ALTER TABLE `titleUpdate` DISABLE KEYS */;
-INSERT INTO `titleUpdate` VALUES (1,'Linugux'),(2,'Linugux Inx.'),(3,'Linugux.ddns.net'),(4,'LiNUGUX'),(5,'LiNUGUX iNX.'),(6,'Linugux@gmail.com'),(7,'http://Linugux.ddns.net');
-/*!40000 ALTER TABLE `titleUpdate` ENABLE KEYS */;
+LOCK TABLES `country` WRITE;
+/*!40000 ALTER TABLE `country` DISABLE KEYS */;
+INSERT INTO `country` VALUES (1,'México'),(2,'Brazil'),(3,'Colombia');
+/*!40000 ALTER TABLE `country` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

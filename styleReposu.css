@@ -137,13 +137,11 @@ h5 {
 }
 
 hr {
-    width: 300px;
     border-top: 1px solid #C6E4F3;
     border-left: none;
     border-right: none;
     border-bottom: none;
     background-color: #fff;
-    margin: 0px auto;
 }
 
 #content {

@@ -8,3 +8,4 @@ cat /var/www/html/fortuneCowsay.php >> /var/www/html/fortuneRecord.php
 cat /var/www/html/cowsay.php >> /var/www/html/fortuneRecord.php 
 toilet --html -F border --metal Linugux > /var/www/html/linuguxToilet.php
 espeak -s 110 -f /var/www/html/fortuneCowsay.php -a 100 -p 10   -w /var/www/html/espeak.mp3
+#man bash  > /var/www/html/cowsayMysql.php

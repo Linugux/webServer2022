@@ -8,11 +8,9 @@ LIMIT 1")
 
   #while ($row = mysqli_fetch_array($query)) {
     if($row = mysqli_fetch_array($query)){
-      echo"{$row['msg65']}<br>";
+      echo"<a style='color: white; font-size: 13px;'> {$row['msg65']}</a><br>";
     }
   mysqli_close($dbconnect);
   ?>
-  </table>
-</div>
 
   

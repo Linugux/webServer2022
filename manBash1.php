@@ -1,9 +1,8 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>
-        http://Linugux.ddns.net
-    </title>
-    <link rel="canonical" href="https://linugux.ddns.net" />
+	<title>Man Bash</title>
+	<link rel="canonical" href="https://linugux.ddns.net/manBash1.php" />
     <link rel="icon" type="image/png" href="linugux.jpg">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -23,31 +22,11 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3WJMK9" height="0" width="0" style="display:none;visibility hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 </head>
-
-<script type="text/javascript">
-  $(document).ready(function() {
-      var refreshId =  setInterval( function(){
-    $('#reloadIndexNavUpdate').load('indexNavUpdate.php');//actualizas el div
-   }, 1000 );
-});
-  $(document).ready(function() {
-      var refreshId =  setInterval( function(){
-   //$('#reloadMariaDb').load('reloadMariaDb.php');//actualizas el div
-   }, 60000 );
-});
-</script>
-<body style="background-color: black; color: white; max-width: 1000px;" onload="brython()">
-  <section id="reloadMariaDb" style="">
-    <?php include 'reloadMariaDb.php'?> 
-  </section>
-  <div id="reloadIndexNavUpdate" style="position: fixed; bottom: 13px;"></div>
-  <img width="15%" src="linugux.jpg" style="position:fixed; bottom: 25px; left: 0"/>
-  <hr>
-  <section style="position: ;">
-    <a href="index2021.php" style="color: white;">Pagina 2021 Linugux</a>
-  </section>
-  <footer>
-    
-  </footer>
+<body style="color: white; background: black;">
+	<tt>
+		<pre>
+			<?php include 'manBash.php'?>
+		</pre>
+	</tt>
 </body>
 </html>

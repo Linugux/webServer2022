@@ -1,3 +1,3 @@
 (fortunes)
 %
-You may be recognized soon.  Hide.
+Don't feed the bats tonight.
