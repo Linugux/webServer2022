@@ -25,8 +25,11 @@ DROP TABLE IF EXISTS `area`;
 CREATE TABLE `area` (
   `id_area` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_area` varchar(20) NOT NULL,
-  PRIMARY KEY (`id_area`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+  `id_puesto` int(11) NOT NULL,
+  PRIMARY KEY (`id_area`),
+  KEY `id_puesto` (`id_puesto`),
+  CONSTRAINT `area_ibfk_1` FOREIGN KEY (`id_puesto`) REFERENCES `puesto` (`id_puesto`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -74,7 +77,7 @@ CREATE TABLE `empleado` (
   CONSTRAINT `empleado_ibfk_1` FOREIGN KEY (`id_turno`) REFERENCES `turno` (`id_turno`),
   CONSTRAINT `empleado_ibfk_2` FOREIGN KEY (`id_puesto`) REFERENCES `puesto` (`id_puesto`),
   CONSTRAINT `empleado_ibfk_3` FOREIGN KEY (`id_area`) REFERENCES `area` (`id_area`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -152,7 +155,7 @@ CREATE TABLE `puesto` (
   `nombre_puesto` varchar(20) NOT NULL,
   `rango` int(11) NOT NULL,
   PRIMARY KEY (`id_puesto`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -201,4 +204,4 @@ CREATE TABLE `ventas` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-01 15:57:54
+-- Dump completed on 2022-05-03 23:53:39

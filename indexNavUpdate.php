@@ -1,1 +1,1 @@
-<tt style="font-size: 10px; justify-content: ">http://Linugux.ddns.net +52 56 2460 0477 Linugux@gmail.com</tt>
+<tt style="font-size: 13px; justify-content: "><b>http://Linugux.ddns.net +52 56 2460 0477 Linugux@gmail.com</b></tt>
