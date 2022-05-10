@@ -68,8 +68,12 @@
     	}
 	echo "</td><td>";
    
-   while($rowb = mysqli_fetch_array($aquery1)){
+	while($rowb = mysqli_fetch_array($aquery1)){
  			   echo "<b>{$rowb['count(*)']}</b> en el <b>{$rowb['nombre_turno']}</b><br>";
+		}
+	echo "</td><td>";
+   while($rowb21 = mysqli_fetch_array($aquery121)){
+ 			   echo "<b>{$rowb21['count(*)']}</b> <b>{$rowb21['nombre_puesto']}</b> </b> ... <b>{$rowb21['nombre_turno']}</b><br>";
 		}
     echo "</td></tr>";
     

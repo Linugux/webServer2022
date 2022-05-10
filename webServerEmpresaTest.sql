@@ -29,7 +29,7 @@ CREATE TABLE `area` (
   PRIMARY KEY (`id_area`),
   KEY `id_puesto` (`id_puesto`),
   CONSTRAINT `area_ibfk_1` FOREIGN KEY (`id_puesto`) REFERENCES `puesto` (`id_puesto`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,6 +66,7 @@ CREATE TABLE `empleado` (
   `id_puesto` int(11) NOT NULL,
   `id_turno` int(11) NOT NULL,
   `telefono` double NOT NULL,
+  `telefono2` double NOT NULL,
   `salario` double NOT NULL,
   `id_area` int(11) NOT NULL,
   `ingreso` date NOT NULL,
@@ -77,7 +78,7 @@ CREATE TABLE `empleado` (
   CONSTRAINT `empleado_ibfk_1` FOREIGN KEY (`id_turno`) REFERENCES `turno` (`id_turno`),
   CONSTRAINT `empleado_ibfk_2` FOREIGN KEY (`id_puesto`) REFERENCES `puesto` (`id_puesto`),
   CONSTRAINT `empleado_ibfk_3` FOREIGN KEY (`id_area`) REFERENCES `area` (`id_area`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -155,7 +156,30 @@ CREATE TABLE `puesto` (
   `nombre_puesto` varchar(20) NOT NULL,
   `rango` int(11) NOT NULL,
   PRIMARY KEY (`id_puesto`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `terapias`
+--
+
+DROP TABLE IF EXISTS `terapias`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `terapias` (
+  `id_terapia` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre_terapia` varchar(200) NOT NULL,
+  `que_es_terapia` blob NOT NULL,
+  `historia_terapia` text NOT NULL,
+  `paraque_sirve_terapia` text NOT NULL,
+  `origen_terapia` text NOT NULL,
+  `tiempo_hrs_por_dia` time NOT NULL,
+  `tiempo_dias_por_semana` date NOT NULL,
+  `tiempo_semanas_por_mes` date NOT NULL,
+  `tiempo_por_meses` date NOT NULL,
+  `tiempo_creacion_terapia_inicio` date NOT NULL,
+  PRIMARY KEY (`id_terapia`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -204,4 +228,4 @@ CREATE TABLE `ventas` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-03 23:53:39
+-- Dump completed on 2022-05-10 17:06:04

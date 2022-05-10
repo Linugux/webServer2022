@@ -39,15 +39,19 @@
 });
 </script>
 <body style="background-color: black; color: white; max-width: 1000px;" onload="brython()">
-  <section id="reloadMariaDb" style="">
-    <?php include 'reloadMariaDb.php'?> 
+  <section id="reloadMariaDb" style="display:;">
+    <?php include 'reloadMariaDb1.php'?> 
+  </section>
+  <section style="position: ;">
+    Sitios Anteriores :::
+    <br>
+    <a href="index4May2022.php" style="color: ;">WebSite@2022_TablasEmpleadoDBMariaDb</a>
+    <br>
+    <a href="index2021.php" style="color: ;">WebSite@2021_Linugux.ddns.net</a>
   </section>
   <div id="reloadIndexNavUpdate" style="position: fixed; bottom: 13px;"></div>
   <img width="15%" src="linugux.jpg" style="position:fixed; bottom: 25px; right: 0"/>
   <hr>
-  <section style="position: ;">
-    <a href="index2021.php" style="color: white;">WebSite@2021_Linugux.ddns.net</a>
-  </section>
   <footer>
     Cuautitlan Izcalli <br> Estado de México <br> México
   </footer>

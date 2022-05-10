@@ -1,17 +1,27 @@
  _________________________________________
-/ (literature) % Few things are harder to \
-| put up with than the annoyance of a     |
-| good example. -- "Mark Twain,           |
-\ Pudd'nhead Wilson's Calendar"           /
+/ (riddles) % Q: How many Bell Labs Vice  \
+| Presidents does it take to change a     |
+| light bulb? A: That's proprietary       |
+| information. Answer available from AT&T |
+| on payment of license fee (binary       |
+\ only).                                  /
  -----------------------------------------
-    \
-     \
-                                   .::!!!!!!!:.
-  .!!!!!:.                        .:!!!!!!!!!!!!
-  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$ 
-      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P 
-      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$# 
-      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$* 
-      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R" 
-        "*$bd$$$$      '*$$$$$$$$$$$o+#" 
-             """"          """"""" 
+    \               ,-----._
+  .  \         .  ,'        `-.__,------._
+ //   \      __\\'                        `-.
+((    _____-'___))                           |
+ `:='/     (alf_/                            |
+ `.=|      |='                               |
+    |)   O |                                  \
+    |      |                               /\  \
+    |     /                          .    /  \  \
+    |    .-..__            ___   .--' \  |\   \  |
+   |o o  |     ``--.___.  /   `-'      \  \\   \ |
+    `--''        '  .' / /             |  | |   | \
+                 |  | / /              |  | |   mmm
+                 |  ||  |              | /| |
+                 ( .' \ \              || | |
+                 | |   \ \            // / /
+                 | |    \ \          || |_|
+                /  |    |_/         /_|
+               /__/

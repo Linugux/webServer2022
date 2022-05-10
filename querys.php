@@ -159,4 +159,16 @@ $aquery1 = mysqli_query($dbconnect, "SELECT count(*),nombre_area,id_empleado,nom
 									group by nombre_turno
 									ORDER BY id_turno;")
      or die (mysqli_error($dbconnect));
+
+$aquery121 = mysqli_query($dbconnect, "SELECT count(*),nombre_area,id_empleado,nombre_empleado,nombre_turno,turno.id_turno,area.id_area,area.nombre_area,puesto.id_puesto,puesto.nombre_puesto
+									from empleado 
+									inner join area 
+										on empleado.id_area=area.id_area
+									INNER JOIN turno
+										ON empleado.id_turno=turno.id_turno
+									INNER JOIN puesto
+										ON empleado.id_puesto=puesto.id_puesto
+									group by puesto.nombre_puesto
+									ORDER BY id_turno DESC;")
+     or die (mysqli_error($dbconnect));
 ?>

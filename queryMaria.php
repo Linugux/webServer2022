@@ -1,11 +1,10 @@
 <b>Tablas Relacionadas MariaDB</b>
 <a href="webServerEmpresaTest.txt">QuerySqlFile</a>
 <hr>
-
 <style type="text/css">
 	td {
 		font-size: 11px;
-		padding: 4px; 
+		padding: 3px; 
 		border: .5px solid white; 
 		border-collapse: collapse;
 	}
