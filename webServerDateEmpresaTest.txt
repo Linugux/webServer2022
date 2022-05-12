@@ -29,7 +29,7 @@ CREATE TABLE `area` (
   PRIMARY KEY (`id_area`),
   KEY `id_puesto` (`id_puesto`),
   CONSTRAINT `area_ibfk_1` FOREIGN KEY (`id_puesto`) REFERENCES `puesto` (`id_puesto`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `area` (
 
 LOCK TABLES `area` WRITE;
 /*!40000 ALTER TABLE `area` DISABLE KEYS */;
-INSERT INTO `area` VALUES (1,'Programacion',1),(2,'Mantenimiento',5),(3,'Mantenimiento',7),(4,'Almacen',7),(5,'Administracion',6),(6,'Publicidad',9),(7,'Trascendenal',10),(8,'Relaciones Publicas',10),(9,'Imagen',11),(10,'Director',12),(11,'Empresarial',13);
+INSERT INTO `area` VALUES (1,'Programacion',1),(2,'Mantenimiento',5),(3,'Mantenimiento',7),(4,'Almacen',7),(5,'Ventas',6),(6,'Publicidad',9),(7,'Trascendenal',10),(8,'Administracion',10),(9,'Imagen',11),(10,'Director',12),(11,'Empresarial',13),(12,'Produccion',9),(13,'Realizacion-Producto',9);
 /*!40000 ALTER TABLE `area` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -86,6 +86,7 @@ CREATE TABLE `empleado` (
   `id_turno` int(11) NOT NULL,
   `telefono` double NOT NULL,
   `telefono2` double NOT NULL,
+  `telefono3` double NOT NULL,
   `salario` double NOT NULL,
   `id_area` int(11) NOT NULL,
   `ingreso` date NOT NULL,
@@ -97,7 +98,7 @@ CREATE TABLE `empleado` (
   CONSTRAINT `empleado_ibfk_1` FOREIGN KEY (`id_turno`) REFERENCES `turno` (`id_turno`),
   CONSTRAINT `empleado_ibfk_2` FOREIGN KEY (`id_puesto`) REFERENCES `puesto` (`id_puesto`),
   CONSTRAINT `empleado_ibfk_3` FOREIGN KEY (`id_area`) REFERENCES `area` (`id_area`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -106,7 +107,7 @@ CREATE TABLE `empleado` (
 
 LOCK TABLES `empleado` WRITE;
 /*!40000 ALTER TABLE `empleado` DISABLE KEYS */;
-INSERT INTO `empleado` VALUES (1,'Linugux',1,3,525624600477,0,16000,1,'2022-04-28','linugux@gmail.com'),(2,'Jorge Contreras',5,1,525517734650,0,26000,2,'2022-05-03','jorge10@hotmail.com'),(3,'Nestor Garrido',2,2,525624600477,0,18000,1,'2022-04-27','netogardo@hotmail.com'),(4,'Xugunil',2,2,525624600477,0,12000,1,'2022-04-26','xugunil@gmail.com'),(5,'Rafael Vega',7,1,525512887122,0,13000,3,'2021-12-26','xrv3@gmail.com'),(6,'Johann Cruz',8,1,525632620147,0,10000,1,'2019-12-10','Joh76a@hotmail.com'),(7,'Bras Pepe',3,1,525624600477,0,12000,1,'2000-10-01','braspepe@gmail.com'),(8,'Albert Smth',7,1,457654678890,0,3000,4,'2022-02-02','albertsmith73@gmail.com'),(9,'Cinthya Castaneda',9,1,525522632657,0,15000,6,'2022-05-04','??@gmail.com'),(10,'Monica Garcia',10,1,527222312555,527222312555,16000,5,'2022-05-04','monyke3828@gmail.com'),(11,'Enrique Santos',10,1,525520714189,0,17000,8,'2022-03-04','???@gmail.com'),(12,'Alexis Hernandez',11,1,525547175662,0,12000,9,'2022-04-26','alexishernandezcruz@gmail.com'),(13,'Miguel Moreno Lahak Ahua',12,1,525539816825,0,1000,10,'2022-05-09','???@gmail.com'),(14,'Liz Zenteno',13,1,5519672103,0,33000,11,'2022-05-10','??????@gmail.com');
+INSERT INTO `empleado` VALUES (1,'Linugux',1,3,525624600477,0,0,16000,1,'2022-04-28','linugux@gmail.com'),(2,'Jorge Contreras',5,1,525517734650,0,0,26000,2,'2022-05-03','jorge10@hotmail.com'),(3,'Nestor Garrido',9,2,525624600477,0,0,18000,1,'2022-04-27','Linugux@gmail.com'),(4,'Xugunil',2,2,525624600477,0,0,12000,1,'2022-04-26','xugunil@gmail.com'),(5,'Rafael Vega',7,1,525512887122,0,0,13000,3,'2021-12-26','xrv3@gmail.com'),(6,'Johann Cruz',8,1,525632620147,0,0,10000,1,'2019-12-10','Joh76a@hotmail.com'),(7,'Alexis Hernandez',9,1,525547175662,0,0,12000,9,'2022-04-26','alexishernandezcruz@gmail.com'),(8,'Cinthya Castaneda',9,1,525522632657,0,0,15000,6,'2022-05-04','@gmail.com'),(9,'Nancy Cabrera',9,1,525520957315,0,0,15000,5,'2022-05-04','cajudy77@gmail.com'),(10,'Jose Sixtos Garcia',9,1,525560313314,0,0,1000,13,'2022-05-09','sixto_aguilas@hotmail.com'),(11,'Monica Garcia',9,1,527222312555,527225954122,0,16000,5,'2022-05-04','monyke3828@gmail.com'),(13,'Enrique Santos',9,1,525520714189,0,0,17000,8,'2022-03-04','santosreyes@yahoo.com'),(14,'Liz Zenteno',13,1,5519672103,0,0,33000,11,'2022-05-10','??????@gmail.com'),(16,'Miguel Moreno Lahak Ahua',9,1,525539816825,0,0,10000,10,'2022-05-11','mmoreno390@msn.com');
 /*!40000 ALTER TABLE `empleado` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -230,7 +231,7 @@ CREATE TABLE `puesto` (
 
 LOCK TABLES `puesto` WRITE;
 /*!40000 ALTER TABLE `puesto` DISABLE KEYS */;
-INSERT INTO `puesto` VALUES (1,'root',111),(2,'BackEnd',101),(3,'Sys/Admin',110),(4,'Fresado',111),(5,'Mecanico',111),(6,'Aux.General',111),(7,'Director',0),(8,'SubDirector',11),(9,'Testlahak',110),(10,'Testlahak',110),(11,'Testlahak',111),(12,'Testlahak',111),(13,'Administracion',111);
+INSERT INTO `puesto` VALUES (1,'root',111),(2,'BackEnd',101),(3,'Sys/Admin',110),(4,'Fresador',111),(5,'Mecanico',111),(6,'Aux.General',111),(7,'Director',0),(8,'SubDirector',11),(9,'Testlahak',110),(10,'Terapeuta',110),(11,'Psicologo',111),(12,'Ejecutivo',111),(13,'Sacerdote',111);
 /*!40000 ALTER TABLE `puesto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -332,4 +333,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-10 17:06:04
+-- Dump completed on 2022-05-12 13:06:07
